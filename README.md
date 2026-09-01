@@ -141,48 +141,7 @@ The analysis supports the following recommendations:
 | Business_Problem_Document.pdf | Business context and required deliverables |
 | LICENSE | MIT license |
 
-## How to Use
 
-### 1. Clone the repository
-
-    git clone https://github.com/yuvrajrgv/customer-shopping-behavior-analysis.git
-    cd customer-shopping-behavior-analysis
-
-### 2. Run the Python notebook
-
-Open Customer_Shopping_Behavior_Analysis.ipynb in Jupyter Notebook, JupyterLab, or Google Colab. Keep customer_shopping_behavior.csv in the same working directory, or update the file path in the first notebook cell.
-
-Install the Python libraries required by the notebook:
-
-    pip install pandas sqlalchemy psycopg2-binary
-
-The notebook contains additional examples for MySQL and Microsoft SQL Server connections. Replace database connection placeholders with your own local credentials and never commit real passwords or connection strings to a public repository.
-
-### 3. Load the cleaned data into PostgreSQL
-
-Create a database named customer_behavior, run the notebook's PostgreSQL loading section, and confirm that the cleaned data is available in a table named customer.
-
-### 4. Run the SQL analysis
-
-Open customer_behavior_sql_queries.sql in a PostgreSQL client such as pgAdmin or DBeaver and execute the queries against the customer table.
-
-### 5. Open the Power BI dashboard
-
-Open customer_behavior_dashboard.pbix in Power BI Desktop and connect it to the database or data model used for the analysis. Refresh the model if the source connection has changed.
-
-## Project Deliverables
-
-- Cleaned and transformed analytical dataset
-- Reproducible Python notebook
-- PostgreSQL-ready data-loading workflow
-- Ten SQL business analysis queries
-- Interactive Power BI dashboard
-- Written analysis report
-- Stakeholder presentation
-
-## License
-
-This project is licensed under the MIT License. See LICENSE for details.
 
 ## Author
 
